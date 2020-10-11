@@ -1,3 +1,9 @@
-def my_each # put argument(s) here
-  # code here
+def my_each(collection)
+words = 0
+while words < collection.length
+  yield(collection[words])
+  words = words + 1
+  
+end
+collection
 end
